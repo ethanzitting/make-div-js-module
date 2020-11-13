@@ -1,7 +1,7 @@
-const makeDiv = (parentID, childID, htmlToUse, referenceChild) => {
-	const parent = document.querySelector(`${parentID}`);
+const makeDiv = (parentId, childId, htmlToUse, referenceChild) => {
+	const parent = document.querySelector(`${parentId}`);
 	const child = document.createElement("div");
-	child.setAttribute("id", `${childID}`);
+	child.setAttribute("id", `${childId}`);
 	htmlToUse = htmlToUse || "";
 	child.innerHTML = htmlToUse;
 
